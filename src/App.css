@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width: 100vw;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root {
+  width: 100%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 310px;
+  height: 175px;
+  background-color: #1a3263;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px 0px rgb(0 0 0 / 30%);
+  border-radius: 5px;
+}
+
+.title {
   color: white;
+  font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.message{
+  font-size: 15px;
+  color: white;
+  margin-top: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stars-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.star {
+  height: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.submit-container{
+  flex: 1; 
+  display: flex; 
+  align-items: flex-end; 
+  justify-content: flex-end; 
+}
+
+.submit{
+  background-color: white;
+  padding: 5px 14px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 30%);
+}
+
+.submit:hover{
+  background-color:#78727b;
+  color: white;
+  cursor: pointer;
 }

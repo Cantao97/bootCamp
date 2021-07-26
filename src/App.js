@@ -1,33 +1,32 @@
-import logo from './logo.svg';
-//import './App.css';
+import './App.css';
+import star from './assets/star.png'
 
 function App() {
-  return (
-    <div 
-      style={{
-        width: '400px',
-        height: "200px",
 
-      }}
-    >
-      <p> Projeto 1 </p>
+  const handleClick = (star) => {
+    alert(star);
+  }
+
+  return (
+    <div className="app"> 
+      <div className="container">
+
+        <p className="title"> Gostou do projeto? </p>
+        <p className="message"> Dê um feedback: </p>
+
+        <div className="stars-container">
+          <img src={star} alt="star" className="star" onClick={() => handleClick(1)}/>
+          <img src={star} alt="star" className="star" onClick={() => handleClick(2)}/>
+          <img src={star} alt="star" className="star" onClick={() => handleClick(3)}/>
+          <img src={star} alt="star" className="star" onClick={() => handleClick(4)}/>
+          <img src={star} alt="star" className="star" onClick={() => handleClick(5)}/>
+        </div>
+
+        <div className="submit-container"> 
+          <button type="button" className="submit">Enviar</button>
+        </div>
+      </div>
     </div>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 
